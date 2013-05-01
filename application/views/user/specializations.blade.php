@@ -38,6 +38,8 @@
                     <a class="brand" href="{{URL::to('user')}}">{{Auth::user()->id_number}}</a>
                     <div class="nav-collapse">
                         <ul class="nav">
+                                                        <li><a href="{{URL::to('index')}}">Home</a></li>
+
                             <li><a href="{{URL::to('user/statistics')}}">Statistics</a></li>
                             <li class="active"><a href="{{URL::to('user/manage')}}">Manage</a></li>
                             <li><a href="{{URL::to('user/logout')}}">logout</a></li>

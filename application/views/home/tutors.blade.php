@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="<?= URL::base().'/img/pts/favicon.ico'?>">
+        <link rel="shortcut icon" href="<?= URL::base() . '/img/pts/favicon.ico' ?>">
 
         <!-- Le styles -->
         {{HTML::style('css/bootstrap.css') }}
@@ -59,26 +59,29 @@
                 <hr>
                 <p class="text-center">Here is some of our active and devoted tutors! </p>
             </div>
-
-            <ul class="thumbnails">
-                @foreach($users as $user)
-                <li class="span3">
-                    <a class="thumbnail" href="tutors/{{$user->id_number}}" style="">
-                       <?= Laravel\HTML::image("img/profile/".$user->picture, $user->id_number, array(
-                           'style' => 'width:200px',
-                           'class' => 'img-circle ',
-                         
-                       ))?>
-                    </a>
-                    <h3>{{$user->last_name}}, {{$user->first_name}}</h3>
-                </li>
-                @endforeach
-            </ul>
-
+            <div class="row">
+                        @foreach($users as $user)
+                        <div class="span3" style="height: 400px">
+                    <ul class="thumbnails">
+                        <li class="span3">
+                            <a class="thumbnail" href="tutors/{{$user->id_number}}" style="">
+                                <?=
+                                Laravel\HTML::image("img/profile/" . $user->picture, $user->id_number, array(
+                                    'style' => 'width:200px',
+                                    'class' => 'img-circle ',
+                                ))
+                                ?>
+                            </a>
+                            <h3>{{$user->last_name}}, {{$user->first_name}}</h3>
+                        </li>
+                    </ul>
+                </div>
+                        @endforeach
+            </div>
             <hr>
 
             <footer>
-                                <p>&copy; PTSOnline 2013</p>
+                <p>&copy; PTSOnline 2013</p>
 
             </footer>
         </div> <!-- /container -->

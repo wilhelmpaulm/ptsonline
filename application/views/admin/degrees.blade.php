@@ -38,6 +38,8 @@
                     <a class="brand" href="{{URL::to('admin')}}">Admin</a>
                     <div class="nav-collapse">
                         <ul class="nav">
+                                                                                    <li><a href="{{URL::to('index')}}">Home</a></li>
+
                             <li><a href="{{URL::to('admin/users')}}">Users</a></li>
                             <li  class="active"><a href="{{URL::to('admin/degrees')}}">Degrees</a></li>
                             <li><a href="{{URL::to('admin/specializations')}}">Specializations</a></li>

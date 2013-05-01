@@ -27,6 +27,8 @@ class Admin_Badges_Controller extends Base_Controller {
     }   
 	public function post_new()
     {
+            if(Input::get('picture.name'))
+            {
         Input::upload('picture', 'public/img/badges/', Input::file('picture.name'));
             
             Badge::create(array(
@@ -38,6 +40,16 @@ class Admin_Badges_Controller extends Base_Controller {
 
         
         return Redirect::back();
+            }else
+            {
+                Badge::create(array(
+                'name' => Input::get('name'),
+                'description' => Input::get('description'),
+                'points' => Input::get('points'),
+                'picture' => 'none'
+            ));
+                return Redirect::back();
+            }
     }    
    	 public function get_index()
     {
