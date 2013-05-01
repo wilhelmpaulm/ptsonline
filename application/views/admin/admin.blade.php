@@ -1,0 +1,1 @@
+This is the D:\DevBox\WAMP\www\PTS\application\views/admin.blade.php view
