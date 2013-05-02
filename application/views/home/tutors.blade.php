@@ -10,10 +10,10 @@
 
         <!-- Le styles -->
         {{HTML::style('css/bootstrap.css') }}
-        <style type="text/css">
-            body { padding-top: 60px; padding-bottom: 40px; }
-        </style>
         {{ HTML::style('css/bootstrap-responsive.css') }}
+        <style type="text/css">
+            body { padding-top: 60px; padding-bottom: 40px; background-image:url('http://localhost/PTS1/img/bg/escheresque.png')}
+        </style>
 
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -28,7 +28,7 @@
 
 
 
-        <div class="navbar navbar-fixed-top">
+        <div class="navbar navbar-fixed-top ">
             <div class="navbar-inner">
                 <div class="container">
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -57,17 +57,17 @@
                 <hr>
                 <h1 class="text-center">{ Our Tutors }</h1>
                 <hr>
-                <p class="text-center">Here is some of our active and devoted tutors! </p>
+                <p class="text-center">" Here are some of our active and devoted tutors! "</p>
             </div>
             <div class="row">
                         @foreach($users as $user)
                         <div class="span3" style="height: 400px">
-                    <ul class="thumbnails">
-                        <li class="span3">
-                            <a class="thumbnail" href="tutors/{{$user->id_number}}" style="">
+                            <ul class="thumbnails text-center" >
+                        <li>
+                            <a class="thumbnail" href="tutors/{{$user->id_number}}" style="height: 250px; width: 280px; background-image:url('http://localhost/PTS1/img/bg/p4.png')">
                                 <?=
                                 Laravel\HTML::image("img/profile/" . $user->picture, $user->id_number, array(
-                                    'style' => 'width:200px',
+                                    'style' => 'width:200px; height:200px',
                                     'class' => 'img-circle ',
                                 ))
                                 ?>

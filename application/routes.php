@@ -153,7 +153,7 @@ Route::post('signup', function() {
                                 'position' => Input::get('position'),
                                 'mobile' => Input::get('mobile'),
                                 'password' => Hash::make(Input::get('password')),
-                                'picture' => 'none',
+                                'picture' => '01c.jpg',
                                 'title' => '',
                                 'active' => '0',
                                 'accepting' => '0'

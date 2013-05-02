@@ -12,7 +12,7 @@
         <!-- Le styles -->
         {{HTML::style('css/bootstrap.css') }}
         <style type="text/css">
-            body { padding-top: 60px; padding-bottom: 40px; }
+            body { padding-top: 60px; padding-bottom: 40px; background-image:url('http://localhost/PTS1/img/bg/escheresque.png')}
         </style>
         {{ HTML::style('css/bootstrap-responsive.css') }}
 

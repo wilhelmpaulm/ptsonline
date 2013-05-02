@@ -97,6 +97,9 @@
 			color:#72ADD4;
 		}
 	</style>
+        <style type="text/css">
+            body { padding-top: 60px; padding-bottom: 40px; background-image:url('http://localhost/PTS1/img/bg/escheresque.png')}
+        </style>
 </head>
 <body>
 	<div class="wrapper">
