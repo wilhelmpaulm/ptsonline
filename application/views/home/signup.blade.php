@@ -58,9 +58,9 @@
                 <div class="span3">
 
                 </div>
-                <div class="span4" >
-                    <form class="form-horizontal" action="signup" method="POST" enctype="multipart/form-data">
-                        <fieldset>
+                <div class="span6" style="background-image:url('http://localhost/PTS1/img/bg/p4.png')">
+                    <form class="form-horizontal" action="signup" method="POST" enctype="multipart/form-data" >
+                        <fieldset >
                             <legend>Sign Up</legend>
                             <div class="control-group">
                                 <label class="control-label" for="input01">Last Name</label>
