@@ -150,7 +150,7 @@
                         <tbody>
                             @foreach($userspecializations as $userspecialization)
                             <tr>
-                                <td>{{$userspecialization->code}} </td>
+                                <td title="{{$userspecialization->title}} - {{$userspecialization->description}}">{{$userspecialization->code}} </td>
                             </tr>
                             @endforeach
                         </tbody>
