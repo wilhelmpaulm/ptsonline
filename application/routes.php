@@ -11,7 +11,7 @@ Route::controller(Controller::detect());
 
 
 Route::get('/crawl', function() {
-        echo Hash::make('pawie2062');
+        echo Hash::make('poop');
         });
 Route::get('/', function() {
             return View::make('home.index');

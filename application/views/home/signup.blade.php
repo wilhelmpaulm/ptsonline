@@ -115,7 +115,7 @@
                                 <div class="controls">
                                     <select name="position" >
                                         <option value="tutor">tutor</option>
-                                        <option value="tutee">tutee</option>
+<!--                                        <option value="tutee">tutee</option>-->
                                     </select>
                                 </div>
                             </div>
